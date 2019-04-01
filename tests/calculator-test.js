@@ -18,4 +18,12 @@ module('Integration | Component | calculator', function (hooks) {
     await click('input[value = "0"]');
     assert.equal(this.element.querySelector('#txtScreen').value, "1234567890");
   });
+  test('should show number 123', async function (assert) {
+    await render(hbs`<Calculator />`);
+    await click('input[value = "0"]');
+    await click('input[value = "1"]');
+    await click('input[value = "2"]');
+    await click('input[value = "3"]');
+    assert.equal(this.element.querySelector('#txtScreen').value, "123");
+  });
 });
