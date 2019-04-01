@@ -1,5 +1,5 @@
 <div id="calculator">
-	<input type="text" id="txtScreen" {{prop value=current}}>
+	<input type="text" id="txtScreen" {{prop value=this.rendered}}>
 	<div class="numericPad">
 		<div class="rowsNumPad">
 			<input type="button" value="7" class="btnNum" {{on "click" this.append}}>
