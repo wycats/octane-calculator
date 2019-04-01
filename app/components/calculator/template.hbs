@@ -1,24 +1,23 @@
 <div id="calculator">
-	<input type="text" id="txtScreen">
+	<input type="text" id="txtScreen" {{prop value=current}}>
 	<div class="numericPad">
 		<div class="rowsNumPad">
-			<input type="button" value="7" class="btnNum">
-			<input type="button" value="8" class="btnNum">
-			<input type="button" value="9" class="btnNum">
+			<input type="button" value="7" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="8" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="9" class="btnNum" {{on "click" this.append}}>
 		</div>
 		<div class="rowsNumPad">
-			<input type="button" value="4" class="btnNum">
-			<input type="button" value="5" class="btnNum">
-			<input type="button" value="6" class="btnNum">
+			<input type="button" value="4" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="5" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="6" class="btnNum" {{on "click" this.append}}>
 		</div>
 		<div class="rowsNumPad">
-			<input type="button" value="1" class="btnNum">
-			<input type="button" value="2" class="btnNum">
-			<input type="button" value="3" class="btnNum">
+			<input type="button" value="1" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="2" class="btnNum" {{on "click" this.append}}>
+			<input type="button" value="3" class="btnNum" {{on "click" this.append}}>
 		</div>
 		<div class="rowsNumPad">
-			<input type="button" value="." class="btnNum">
-			<input type="button" value="0" class="btnNum">
+			<input type="button" value="0" class="btnNum" {{on "click" this.zero}}>
 			<input type="button" value="=" class="btnNum">
 		</div>
 	</div>
