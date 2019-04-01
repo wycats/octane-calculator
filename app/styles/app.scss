@@ -1,0 +1,115 @@
+#calculator {
+	width: 317px;
+	height: 420px;
+	margin: 0 auto;
+	margin-top: 100px;
+	-moz-box-shadow: 0 0 8px #000;
+	-webkit-box-shadow: 0 0 8px #000;
+	box-shadow: 0 0 8px #000;
+	background-color:#B9B9B9;
+}
+
+#txtScreen {
+	float: left;
+	width: 315px;
+	height: 100px;
+	font-size: xx-large;
+	text-align: right;
+	border:none;
+	border-top: 10px solid #1BE1B0;
+	text-shadow: 1px 2px gray;
+}
+
+.numericPad {
+	position: relative;
+	float: left;
+	background-color: #4E4E4E;
+}
+
+.btnNum {
+	width: 77px;
+	height: 77px;
+	color: #ffffff;
+	background-color: #4E4E4E;
+	border: none;
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btnNum:hover {
+	background-color: #464545;
+}
+
+.funtionPad {
+	position: relative;
+	float: left;
+	background-color: #B9B9B9;
+}
+
+.btnFuntionPad {
+	width: 60.4px;
+	height: 60.4px;
+	color: #ffffff;
+	background-color: #B9B9B9;
+	border: none;
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btnFuntionPad:hover {
+	background-color: #ACABAB;
+}
+
+.extraFuntionPad {
+	width: 15.6px;
+	height: 308px;
+	background-color: #1BE1B0;
+	position: relative;
+	float: right;
+}
+
+.rowsExtraFuntionPad {
+	height: 308px;
+	background-color: #1BE1B0;
+	position: relative;
+	display: inline-flex;
+	right: 170px;
+	opacity: 0;
+	visibility: hidden;
+	-moz-transition: opacity .5s, visibility .5s;
+	-webkit-transition: opacity .5s, visibility .5s;
+	-o-transition: opacity .5s, visibility .5s;
+	transition: opacity .5s, visibility .5s;
+	transition-timing-function: ease-in;
+}
+
+.extraFuntionPad:hover > .rowsExtraFuntionPad {
+	visibility: visible;
+	opacity: 100;
+}
+
+.btnExtraFuntionPad {
+	width: 61px;
+	height: 61.5px;
+	color: #fff;
+	background-color: #1BE1B0;
+	border: none;
+	font-size: large;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btnExtraFuntionPad:hover {
+	background-color: #1BD4A6;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer span {
+	color: red;
+}
