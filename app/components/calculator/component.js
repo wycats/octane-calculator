@@ -19,4 +19,8 @@ export default class Calculator extends Component {
     }
   }
 
+  @action
+  backspace() {
+    this.current = Math.floor(this.current / 10)
+  }
 }
